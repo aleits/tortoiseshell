@@ -1,0 +1,197 @@
+/** * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+**/
+
+html {
+  font-family: Helvetica,sans-serif;
+  font-size: 18px;
+}
+
+
+.bkg {
+background-image: url("../img/glasses-bg.png");
+background-position: center;
+background-size: cover;
+height: 30rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto ;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  background-color: cadetblue;
+  position:relative;
+  top:1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.logo>h4 {
+color: white;
+font-size: 1rem;
+
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  color: white;
+  padding-right: 2rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-banner {
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  right: -2rem;
+  padding: 1.5rem 5rem;
+  text-align: right;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14rem;
+
+}
+
+.feature {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items:center;
+font-size: 1rem;
+text-align: center;
+margin: 3rem;
+width: 5rem;
+height: 8rem;
+}
+
+.paper-icon {
+  width: 3.5rem;
+}
+
+.truck-icon {
+  width: 5rem;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.infos{
+  width: 35%;
+}
+
+.infos h2 {
+  font-size: 1rem;
+  background-color: cadetblue;
+  color: white;
+  width: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+footer {
+  height: 9.5rem;
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .bkg  {
+    height: 22rem;
+  }
+
+.container {
+  max-width: 100%;
+}
+
+.navbar {
+  top: 0;
+}
+
+.banner {
+  justify-content: center;
+
+}
+
+.main-banner {
+top:9rem;
+width: 100%;
+right: 0;
+text-align: center;
+padding: 1rem 0;
+
+}
+
+.main-banner> h1 {
+  font-size: 1.5rem;
+
+}
+
+}
+
+@media screen and (max-width: 460px) {
+  .features {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .informations {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infos {
+    width: 100%;
+    padding-bottom: 4rem;
+
+  }
+
+  .infos>h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
